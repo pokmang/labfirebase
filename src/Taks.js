@@ -13,8 +13,8 @@ export default props => {
             </div>
             
             <div className="container">
-            <button onClick={() => deleteTask(id)}>Delete</button>
-            <button onClick={() => editTask(id)}>Edit</button>
+            <button className="dl" onClick={() => deleteTask(id)}>Delete</button>
+            <button className="ed" onClick={() => editTask(id)}>Edit</button>
             </div>
             
         </li>

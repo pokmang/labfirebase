@@ -4,6 +4,7 @@ import { useState,useEffect } from 'react';
 import {firestore} from './index'
 import Task from './Taks'
 import './Task.css'
+import './App.css'
 function App() {
   const [tasks, setTasks] = useState([])
     const [name,setName] =useState('')
@@ -55,9 +56,9 @@ function App() {
   
   return (
     <div >
-      <h1>Todo</h1>
-      <input type='text' name="name" onChange={ (e) =>{setName(e.target.value)}}/>
-      <button onClick={addTask}>Summit</button>
+      <h1 className ="name">MY LAB FIREBASE && HOSTING <td> by..USMAN SULONG 5935512036</td></h1>
+      <input  class= "summit" type='text' name="name" onChange={ (e) =>{setName(e.target.value)}}/>
+      <button class= "summit" onClick={addTask}>Summit</button>
      <ul className="dis">{renderTask()}</ul> 
 
     </div>
